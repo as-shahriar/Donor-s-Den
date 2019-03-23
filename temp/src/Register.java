@@ -51,15 +51,15 @@ public class Register extends javax.swing.JFrame {
         fcell = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox1 = new javax.swing.JComboBox<String>();
         jLabel9 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        jComboBox2 = new javax.swing.JComboBox<String>();
         jPanel2 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        jComboBox3 = new javax.swing.JComboBox<String>();
         jLabel13 = new javax.swing.JLabel();
-        jComboBox4 = new javax.swing.JComboBox<>();
-        jComboBox5 = new javax.swing.JComboBox<>();
+        jComboBox4 = new javax.swing.JComboBox<String>();
+        jComboBox5 = new javax.swing.JComboBox<String>();
         jSeparator5 = new javax.swing.JSeparator();
         fpass1 = new javax.swing.JPasswordField();
         jLabel11 = new javax.swing.JLabel();
@@ -174,7 +174,7 @@ public class Register extends javax.swing.JFrame {
         jComboBox1.setBackground(new java.awt.Color(52, 73, 94));
         jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jComboBox1.setForeground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A+", "B+", "O+", "AB+", "A-", "B-", "O-", "AB-" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "A+", "B+", "O+", "AB+", "A-", "B-", "O-", "AB-" }));
         jComboBox1.setBorder(null);
         jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, 163, -1));
 
@@ -186,13 +186,11 @@ public class Register extends javax.swing.JFrame {
         jComboBox2.setBackground(new java.awt.Color(52, 73, 94));
         jComboBox2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jComboBox2.setForeground(new java.awt.Color(255, 255, 255));
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bagerhat ", "Bandarban ", "Barguna ", "Barisal ", "Bhola ", "Bogra ", "Brahmanbaria ", "Chandpur ", "Chittagong ", "Chuadanga ", "Comilla ", "Cox's Bazar ", "Dhaka ", "Dinajpur ", "Faridpur ", "Feni ", "Gaibandha ", "Gazipur ", "Gopalganj ", "Habiganj ", "Jaipurhat ", "Jamalpur ", "Jessore ", "Jhalakati ", "Jhenaidah ", "Khagrachari ", "Khulna ", "Kishoreganj ", "Kurigram ", "Kushtia ", "Lakshmipur ", "Lalmonirhat ", "Madaripur ", "Magura ", "Manikganj ", "Meherpur ", "Moulvibazar ", "Munshiganj ", "Mymensingh ", "Naogaon ", "Narail ", "Narayanganj ", "Narsingdi ", "Natore ", "Nawabganj ", "Netrakona ", "Nilphamari ", "Noakhali ", "Pabna ", "Panchagarh ", "Parbattya Chattagram", "Patuakhali ", "Pirojpur ", "Rajbari ", "Rajshahi ", "Rangpur ", "Satkhira ", "Shariatpur ", "Sherpur ", "Sirajganj ", "Sunamganj ", "Sylhet ", "Tangail ", "Thakurgaon " }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Bagerhat ", "Bandarban ", "Barguna ", "Barisal ", "Bhola ", "Bogra ", "Brahmanbaria ", "Chandpur ", "Chittagong ", "Chuadanga ", "Comilla ", "Cox's Bazar ", "Dhaka ", "Dinajpur ", "Faridpur ", "Feni ", "Gaibandha ", "Gazipur ", "Gopalganj ", "Habiganj ", "Jaipurhat ", "Jamalpur ", "Jessore ", "Jhalakati ", "Jhenaidah ", "Khagrachari ", "Khulna ", "Kishoreganj ", "Kurigram ", "Kushtia ", "Lakshmipur ", "Lalmonirhat ", "Madaripur ", "Magura ", "Manikganj ", "Meherpur ", "Moulvibazar ", "Munshiganj ", "Mymensingh ", "Naogaon ", "Narail ", "Narayanganj ", "Narsingdi ", "Natore ", "Nawabganj ", "Netrakona ", "Nilphamari ", "Noakhali ", "Pabna ", "Panchagarh ", "Parbattya Chattagram", "Patuakhali ", "Pirojpur ", "Rajbari ", "Rajshahi ", "Rangpur ", "Satkhira ", "Shariatpur ", "Sherpur ", "Sirajganj ", "Sunamganj ", "Sylhet ", "Tangail ", "Thakurgaon " }));
         jComboBox2.setBorder(null);
         jPanel1.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 180, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(52, 73, 94));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Asif Shahriar\\Music\\reg.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -216,7 +214,7 @@ public class Register extends javax.swing.JFrame {
         jComboBox3.setBackground(new java.awt.Color(52, 73, 94));
         jComboBox3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jComboBox3.setForeground(new java.awt.Color(255, 255, 255));
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
         jComboBox3.setBorder(null);
         jPanel1.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 210, -1, 30));
 
@@ -228,15 +226,20 @@ public class Register extends javax.swing.JFrame {
         jComboBox4.setBackground(new java.awt.Color(52, 73, 94));
         jComboBox4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jComboBox4.setForeground(new java.awt.Color(255, 255, 255));
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
         jComboBox4.setBorder(null);
         jPanel1.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 210, -1, 30));
 
         jComboBox5.setBackground(new java.awt.Color(52, 73, 94));
         jComboBox5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jComboBox5.setForeground(new java.awt.Color(255, 255, 255));
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2018", "2017" }));
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2020", "2019", "2018", "2017" }));
         jComboBox5.setBorder(null);
+        jComboBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox5ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 210, -1, 30));
         jPanel1.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 330, 170, 10));
 
@@ -335,6 +338,10 @@ public class Register extends javax.swing.JFrame {
     private void fnameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fnameMouseClicked
        fname.setText("");
     }//GEN-LAST:event_fnameMouseClicked
+
+    private void jComboBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox5ActionPerformed
 
     /**
      * @param args the command line arguments

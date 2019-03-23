@@ -6,9 +6,9 @@ import java.sql.*;
 
 public class Database {
     
-        String dusername="sql12228686";
-        String dpassword="mSChxkvanl";
-        String url = "jdbc:mysql://sql12.freemysqlhosting.net/sql12228686";
+        String dusername="root";
+        String dpassword="";
+        String url = "jdbc:mysql://localhost/donors";
         
         String query = "SELECT * FROM `info` WHERE 1";
         

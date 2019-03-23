@@ -118,15 +118,15 @@ public class Home extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         ename = new javax.swing.JTextField();
         ecell = new javax.swing.JTextField();
-        ebg = new javax.swing.JComboBox<>();
-        ecity = new javax.swing.JComboBox<>();
+        ebg = new javax.swing.JComboBox<String>();
+        ecity = new javax.swing.JComboBox<String>();
         euser = new javax.swing.JTextField();
         epass = new javax.swing.JPasswordField();
         jLabel22 = new javax.swing.JLabel();
         epass1 = new javax.swing.JPasswordField();
-        eday = new javax.swing.JComboBox<>();
-        emonth = new javax.swing.JComboBox<>();
-        eyear = new javax.swing.JComboBox<>();
+        eday = new javax.swing.JComboBox<String>();
+        emonth = new javax.swing.JComboBox<String>();
+        eyear = new javax.swing.JComboBox<String>();
         searchpanel = new javax.swing.JPanel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
@@ -134,11 +134,11 @@ public class Home extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         bserach = new javax.swing.JButton();
         jLabel30 = new javax.swing.JLabel();
-        bgbox = new javax.swing.JComboBox<>();
-        citybox = new javax.swing.JComboBox<>();
-        day = new javax.swing.JComboBox<>();
-        month = new javax.swing.JComboBox<>();
-        year = new javax.swing.JComboBox<>();
+        bgbox = new javax.swing.JComboBox<String>();
+        citybox = new javax.swing.JComboBox<String>();
+        day = new javax.swing.JComboBox<String>();
+        month = new javax.swing.JComboBox<String>();
+        year = new javax.swing.JComboBox<String>();
         jScrollPane1 = new javax.swing.JScrollPane();
         showdis = new javax.swing.JTextArea();
         jLabel35 = new javax.swing.JLabel();
@@ -388,7 +388,6 @@ public class Home extends javax.swing.JFrame {
         date1.setText("3-10-2018");
         Profile.add(date1, new org.netbeans.lib.awtextra.AbsoluteConstraints(253, 244, 157, -1));
 
-        jCheckBox1.setFont(new java.awt.Font("Tahoma", 0, 13)); // NOI18N
         jCheckBox1.setText("Show password");
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -528,11 +527,11 @@ public class Home extends javax.swing.JFrame {
         });
 
         ebg.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        ebg.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A+", "B+", "O+", "AB+", "A-", "B-", "O-", "AB-" }));
+        ebg.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "A+", "B+", "O+", "AB+", "A-", "B-", "O-", "AB-" }));
         ebg.setBorder(null);
 
         ecity.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        ecity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bagerhat ", "Bandarban ", "Barguna ", "Barisal ", "Bhola ", "Bogra ", "Brahmanbaria ", "Chandpur ", "Chittagong ", "Chuadanga ", "Comilla ", "Cox's Bazar ", "Dhaka ", "Dinajpur ", "Faridpur ", "Feni ", "Gaibandha ", "Gazipur ", "Gopalganj ", "Habiganj ", "Jaipurhat ", "Jamalpur ", "Jessore ", "Jhalakati ", "Jhenaidah ", "Khagrachari ", "Khulna ", "Kishoreganj ", "Kurigram ", "Kushtia ", "Lakshmipur ", "Lalmonirhat ", "Madaripur ", "Magura ", "Manikganj ", "Meherpur ", "Moulvibazar ", "Munshiganj ", "Mymensingh ", "Naogaon ", "Narail ", "Narayanganj ", "Narsingdi ", "Natore ", "Nawabganj ", "Netrakona ", "Nilphamari ", "Noakhali ", "Pabna ", "Panchagarh ", "Parbattya Chattagram", "Patuakhali ", "Pirojpur ", "Rajbari ", "Rajshahi ", "Rangpur ", "Satkhira ", "Shariatpur ", "Sherpur ", "Sirajganj ", "Sunamganj ", "Sylhet ", "Tangail ", "Thakurgaon " }));
+        ecity.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Bagerhat ", "Bandarban ", "Barguna ", "Barisal ", "Bhola ", "Bogra ", "Brahmanbaria ", "Chandpur ", "Chittagong ", "Chuadanga ", "Comilla ", "Cox's Bazar ", "Dhaka ", "Dinajpur ", "Faridpur ", "Feni ", "Gaibandha ", "Gazipur ", "Gopalganj ", "Habiganj ", "Jaipurhat ", "Jamalpur ", "Jessore ", "Jhalakati ", "Jhenaidah ", "Khagrachari ", "Khulna ", "Kishoreganj ", "Kurigram ", "Kushtia ", "Lakshmipur ", "Lalmonirhat ", "Madaripur ", "Magura ", "Manikganj ", "Meherpur ", "Moulvibazar ", "Munshiganj ", "Mymensingh ", "Naogaon ", "Narail ", "Narayanganj ", "Narsingdi ", "Natore ", "Nawabganj ", "Netrakona ", "Nilphamari ", "Noakhali ", "Pabna ", "Panchagarh ", "Parbattya Chattagram", "Patuakhali ", "Pirojpur ", "Rajbari ", "Rajshahi ", "Rangpur ", "Satkhira ", "Shariatpur ", "Sherpur ", "Sirajganj ", "Sunamganj ", "Sylhet ", "Tangail ", "Thakurgaon " }));
         ecity.setBorder(null);
 
         euser.setFont(new java.awt.Font("Bahnschrift", 0, 15)); // NOI18N
@@ -570,13 +569,13 @@ public class Home extends javax.swing.JFrame {
         });
 
         eday.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        eday.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        eday.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
 
         emonth.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        emonth.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
+        emonth.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
 
         eyear.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        eyear.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2018", "2017" }));
+        eyear.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2020", "2019", "2018", "2017" }));
 
         javax.swing.GroupLayout EditLayout = new javax.swing.GroupLayout(Edit);
         Edit.setLayout(EditLayout);
@@ -665,7 +664,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(eyear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(submitedit, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         getContentPane().add(Edit, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 620, 360));
@@ -706,25 +705,25 @@ public class Home extends javax.swing.JFrame {
         searchpanel.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
 
         bgbox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        bgbox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A+", "B+", "O+", "AB+", "A-", "B-", "O-", "AB-" }));
+        bgbox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "A+", "B+", "O+", "AB+", "A-", "B-", "O-", "AB-" }));
         bgbox.setBorder(null);
         searchpanel.add(bgbox, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 80, -1));
 
         citybox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        citybox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bagerhat ", "Bandarban ", "Barguna ", "Barisal ", "Bhola ", "Bogra ", "Brahmanbaria ", "Chandpur ", "Chittagong ", "Chuadanga ", "Comilla ", "Cox's Bazar ", "Dhaka ", "Dinajpur ", "Faridpur ", "Feni ", "Gaibandha ", "Gazipur ", "Gopalganj ", "Habiganj ", "Jaipurhat ", "Jamalpur ", "Jessore ", "Jhalakati ", "Jhenaidah ", "Khagrachari ", "Khulna ", "Kishoreganj ", "Kurigram ", "Kushtia ", "Lakshmipur ", "Lalmonirhat ", "Madaripur ", "Magura ", "Manikganj ", "Meherpur ", "Moulvibazar ", "Munshiganj ", "Mymensingh ", "Naogaon ", "Narail ", "Narayanganj ", "Narsingdi ", "Natore ", "Nawabganj ", "Netrakona ", "Nilphamari ", "Noakhali ", "Pabna ", "Panchagarh ", "Parbattya Chattagram", "Patuakhali ", "Pirojpur ", "Rajbari ", "Rajshahi ", "Rangpur ", "Satkhira ", "Shariatpur ", "Sherpur ", "Sirajganj ", "Sunamganj ", "Sylhet ", "Tangail ", "Thakurgaon " }));
+        citybox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Bagerhat ", "Bandarban ", "Barguna ", "Barisal ", "Bhola ", "Bogra ", "Brahmanbaria ", "Chandpur ", "Chittagong ", "Chuadanga ", "Comilla ", "Cox's Bazar ", "Dhaka ", "Dinajpur ", "Faridpur ", "Feni ", "Gaibandha ", "Gazipur ", "Gopalganj ", "Habiganj ", "Jaipurhat ", "Jamalpur ", "Jessore ", "Jhalakati ", "Jhenaidah ", "Khagrachari ", "Khulna ", "Kishoreganj ", "Kurigram ", "Kushtia ", "Lakshmipur ", "Lalmonirhat ", "Madaripur ", "Magura ", "Manikganj ", "Meherpur ", "Moulvibazar ", "Munshiganj ", "Mymensingh ", "Naogaon ", "Narail ", "Narayanganj ", "Narsingdi ", "Natore ", "Nawabganj ", "Netrakona ", "Nilphamari ", "Noakhali ", "Pabna ", "Panchagarh ", "Parbattya Chattagram", "Patuakhali ", "Pirojpur ", "Rajbari ", "Rajshahi ", "Rangpur ", "Satkhira ", "Shariatpur ", "Sherpur ", "Sirajganj ", "Sunamganj ", "Sylhet ", "Tangail ", "Thakurgaon " }));
         citybox.setBorder(null);
         searchpanel.add(citybox, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 120, -1));
 
         day.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        day.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        day.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
         searchpanel.add(day, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 45, -1));
 
         month.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        month.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
+        month.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" }));
         searchpanel.add(month, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 45, -1));
 
         year.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        year.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "2018" }));
+        year.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "2018" }));
         searchpanel.add(year, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 67, -1));
 
         showdis.setEditable(false);
