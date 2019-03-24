@@ -1,3 +1,3 @@
 Donor's Den
 <br>
-Import donors.db to your mysql local database.
+Create 'donors' Database and import 'donors.sql' to your mysql local database.
